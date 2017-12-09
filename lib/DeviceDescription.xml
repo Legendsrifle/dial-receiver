@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<root xmlns="urn:schemas-upnp-org:device-1-0">
+    <specVersion>
+        <major>1</major>
+        <minor>0</minor>
+    </specVersion>
+
+    <device>
+        <deviceType>urn:dial-multiscreen-org:service:dial:1</deviceType>
+        <friendlyName>DIAL Receiver Node Module</friendlyName>
+        <manufacturer>Niels Post</manufacturer>
+        <manufacturerURL>http://www.legendsrifle.nl</manufacturerURL>
+        <modelDescription>Node module for receiving node commands</modelDescription>
+        <modelName>DIALR</modelName>
+        <modelNumber>SRV</modelNumber>
+        <modelURL>http://www.legendsrifle.nl</modelURL>
+        <serialNumber>0000001</serialNumber>
+        <UDN>DummyUDN</UDN>
+        <UPC>00000-00001</UPC>
+
+        <iconList>
+            <icon>
+                <mimetype>image/png</mimetype>
+                <width>16</width>
+                <height>16</height>
+                <depth>2</depth>
+                <url>icon.png</url>
+            </icon>
+        </iconList>
+        <serviceList>
+            <service>
+                <serviceType>urn:dial-multiscreen-org:service:dial:1</serviceType>
+                <serviceId>upnp:id:pwrdim</serviceId>
+                <controlURL></controlURL>
+                <eventSubURL></eventSubURL>
+                <SCPDURL>SampleSCPD.xml</SCPDURL>
+            </service>
+        </serviceList>
+
+        <presentationURL>sample.html</presentationURL>
+
+    </device>
+</root>

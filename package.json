@@ -1,0 +1,28 @@
+{
+  "name": "dial-receiver",
+  "version": "1.0.2",
+  "description": "A node module for receiving DIAL requests from casting devices",
+  "main": "dist/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "nodemon lib/index.js --exec babel-node --presets es2015,stage-2",
+    "build": "babel lib -d dist --presets es2015,stage-2 --copy-files",
+    "serve": "node dist/index.js"
+  },
+  "author": "Niels Post",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "nodemon": "^1.12.5"
+  },
+  "dependencies": {
+    "event-emitter-es6": "^1.1.5",
+    "express": "^4.16.2",
+    "ip": "^1.1.5",
+    "node-ssdp": "^3.2.5"
+  }
+}
